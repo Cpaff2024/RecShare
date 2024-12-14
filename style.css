@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #3D5AFE;
+    --error-color: #D32F2F;
+    --background-color: #F5F5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+#submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.error {
+    color: var(--error-color);
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.required {
+    color: var(--error-color);
+}
+
+.consent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.consent input {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.consent a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.consent a:hover {
+    text-decoration: underline;
+}
+
+/* Add these to your existing styles.css */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.logo {
+    max-width: 200px;  /* Adjust based on your logo size */
+    max-height: 100px; /* Adjust based on your logo size */
+    object-fit: contain;
+}
+
+/* Responsive logo adjustments */
+@media (max-width: 600px) {
+    .logo {
+        max-width: 150px;
+        max-height: 75px;
+    }
+}
+
+body {
+    background-image: url('Images/Background/Background01.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: add a semi-transparent overlay */
+    background-blend-mode: lighten; /* Helps blend the image with your content */
+}
